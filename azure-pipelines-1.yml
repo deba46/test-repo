@@ -24,7 +24,7 @@ stages:
       displayName: Build an image
       inputs:
         containerRegistry: 'DockerHubRegistryConn'
-        repository: 'myimages'
+        repository: 'debasisn/myimages'
         command: 'buildAndPush'
         Dockerfile: '**/dockerfile'
         tags: 'beta1'
