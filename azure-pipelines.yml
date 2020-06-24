@@ -23,7 +23,7 @@ stages:
     - task: Docker@2
       displayName: Build an image and push
       inputs:
-        command: buildAndPush
-        dockerfile: '$(Build.SourcesDirectory)/dockerfile'
-        tags: |
-          $(tag)
+        containerRegistry: 'DockerHubRegistryConn'
+        repository: 'debasisn/myimages'
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
