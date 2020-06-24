@@ -1,6 +1,6 @@
 FROM python:3
 
-ADD my_script.py /
+ADD program.py /
 
 RUN pip install pandas==0.25.2
 
