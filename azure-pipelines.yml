@@ -26,4 +26,4 @@ stages:
         containerRegistry: 'DockerHubRegistryConn'
         repository: 'debasisn/myimages'
         command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
+        Dockerfile: '**/dockerfile'
