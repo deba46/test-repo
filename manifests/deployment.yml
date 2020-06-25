@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: debatestrepo 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: debatestrepo 
+    spec:
+      containers:
+        - name: debatestrepo 
+          image: kontainerregistry0.azurecr.io/debatestrepo
+          ports:
+          - containerPort: 80
